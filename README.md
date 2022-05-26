@@ -14,12 +14,12 @@ Attributes:
 
 
 ### **Unzip code**
-Example command: `python -m unzip --zip_path run/media/media.zip --dir_path run/test/`
+Example command: `python -m unzip --zip_path run/media/media.zip --save_path run/test/`
 
 Attributes:
 
 * `--zip_path`: Directory path need to be unzipp (required).
-* `--save_path`: Directory path need to store zip (required).
+* `--save_path`: Directory path need to store zip.
 * `--is_file`: Is zip file {0,1} (default: 1).
 * `--is_folder`: Folder include zip file {0,1} (default: 0).
 * `--combine`: combine all zip file {0,1} (default: 0) (**_Not recommend for normal user_ CVAT YOLO 1.1 only**).
