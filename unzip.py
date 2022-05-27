@@ -33,7 +33,7 @@ def unzipdir(zip_path, save_path, is_file, is_folder, combine):
     if is_folder == 1:
         zip_files = os.listdir(zip_path[0])
         for file in tqdm(zip_files):
-            if file.endswith('.zip'):
+            if file.endswith('.zip') or file.endswith('.ZIP'):
                 fzip_path = join(zip_path[0], file)
                 with zipfile.ZipFile(fzip_path, 'r') as zip_ref:
                     zip_ref.extractall(join(save_path, file.replace('.zip','')))
